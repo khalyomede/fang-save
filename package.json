@@ -1,0 +1,57 @@
+{
+	"name": "@fang/save",
+	"version": "0.1.0",
+	"description": "Save your files into the desired folder.",
+	"main": "lib/index.js",
+	"repository": "https://github.com/khalyomede/fang-save",
+	"author": "Khalyomede <khalyomede@gmail.com>",
+	"license": "MIT",
+	"private": false,
+	"keywords": [
+		"fang-plugin",
+		"save",
+		"folder"
+	],
+	"devDependencies": {
+		"@babel/core": "7.*",
+		"@babel/plugin-transform-runtime": "7.*",
+		"@babel/preset-env": "7.*",
+		"@babel/register": "7.*",
+		"@babel/runtime": "7.*",
+		"@fang/core": "0.*",
+		"@rollup/plugin-commonjs": "11.*",
+		"@rollup/plugin-node-resolve": "7.*",
+		"@rollup/plugin-typescript": "2.*",
+		"@stryker-mutator/babel-transpiler": "2.*",
+		"@stryker-mutator/core": "2.*",
+		"@stryker-mutator/javascript-mutator": "2.*",
+		"@stryker-mutator/mocha-framework": "2.*",
+		"@stryker-mutator/mocha-runner": "2.*",
+		"chai": "4.*",
+		"mocha": "7.*",
+		"np": "5.*",
+		"npm-check-updates": "4.*",
+		"nyc": "15.*",
+		"rollup": "1.*",
+		"rollup-plugin-tslint": "0.*",
+		"tslib": "1.*",
+		"typescript": "3.*"
+	},
+	"peerDependencies": {
+		"@fang/core": "0.*"
+	},
+	"scripts": {
+		"build": "ncu && rollup -c && tsc --emitDeclarationOnly --declarationDir lib",
+		"test": "nyc --reporter=text mocha --require @babel/register --recursive --exit test",
+		"mutate": "stryker run"
+	},
+	"dependencies": {
+		"util": "0.*"
+	},
+	"files": [
+		"lib/interface/index.d.ts",
+		"lib/interface/IOptions.d.ts",
+		"lib/index.d.ts",
+		"lib/index.js"
+	]
+}
