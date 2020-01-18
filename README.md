@@ -2,6 +2,8 @@
 
 Save your files into the desired folder.
 
+[![npm](https://img.shields.io/npm/v/@fang/save)](https://npmjs.com/package/@fang/save) ![NPM](https://img.shields.io/npm/l/@fang/save) ![npm peer dependency version](https://img.shields.io/npm/dependency-version/@fang/save/peer/@fang/core) ![Libraries.io dependency status for latest release](https://img.shields.io/librariesio/release/npm/@fang/save) ![Snyk Vulnerabilities for npm package](https://img.shields.io/snyk/vulnerabilities/npm/@fang/save)
+
 ## Summary
 
 - [About](#about)
